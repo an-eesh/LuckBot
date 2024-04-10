@@ -1,0 +1,18 @@
+<?php
+
+
+$servername = "localhost";
+$username = "root";
+$password = '';
+$dbname = "luckbot";
+
+// Create connection
+$conn = mysqli_connect($servername,$username,$password,$dbname);
+
+?>
+
+
+
+
+
+SELECT luckbotproducts.name,luckbotproducts.price,categories.category,colors.color,sizes.size FROM luckbotproducts LEFT JOIN categories ON luckbotproducts.cid=categories.cid LEFT JOIN colors ON luckbotproducts.clrid=colors.clrid LEFT JOIN sizes ON luckbotproducts.siid=sizes.siid;

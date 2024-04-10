@@ -1,0 +1,106 @@
+<html>
+  <head>
+  	  <title></title>
+  </head>
+
+  <body>
+
+  	 <table style="background-color:#CCCCCC color:#FFFFFF"align="center" cellspacing="10" cellpadding="10" border="1" width="900">
+  	<tr>
+  		<td>
+
+  	 <h1 align="center">Product Details</h1>
+
+  	<table border="0" align="center" width="700">
+  		<tr>
+  		  <td>
+
+
+
+	   <table style="background-color:#CCCCCC color:#FFFFFF"align="center" cellspacing="10" cellpadding="10" border="0" width="700">
+	   	 <tr>
+	   	 	<td align="center"><img src="assets\images\imgx\bg.gif" width="300" height="300"></td>
+	   	 </tr>
+
+	   	 <tr>
+	   	 	<th><font size="6" color="red">Product name</font></th>
+	   	 </tr>
+
+	   	 <tr>
+	   	 	<td style="color:green;">Product prize:</td>
+	   	 </tr>
+
+	   	<tr>
+	   	 	<td style="color:green;">Product Company:</td>
+	   	 </tr>
+
+	   	 <tr>
+	   	 	<td style="color:green;">Product prize:</td>
+	   	 </tr>
+
+	   	  <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="" style="padding: 8px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	  <tr>
+	   	 	<td align="center"> <select class="input--style-3" type="text" placeholder="State" name="pid" id="pid"  onChange="getpanchayath();">
+                    <option value="0" selected="selected">- -Select- -</option>
+                    <?php
+                    $sql="SELECT * FROM places";
+                    $result=$conn->query($sql);
+                    while($row = mysqli_fetch_array($result))
+                    echo '<option value="'.$row['pid'].'" selected="selected">'.$row['place'].'</option>';                                          
+                    ?>
+                    </select>
+        </td>
+	   	</tr>
+
+	   	</table>
+
+	   	    </td>
+	     </tr>
+	</table>
+	  <br>
+	  
+
+
+
+      <table style="background-color:#CCCCCC color:#FFFFFF"align="center" cellspacing="10" cellpadding="10" border="0" width="700">
+
+      	 <tr>
+	   	 	<td align="center" style="color: red; font-size:40px;">Order Details</td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="House Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	   	 <tr>
+	   	 	<td align="center"><input type="text" name="name" id="name" placeholder="Name" style="padding: 12px 20px; width: 100%;"></td>
+	   	 </tr>
+	  </table>
+
+	</td>
+   </tr>
+  </table>
+
+
+  </body>
+ </html>
